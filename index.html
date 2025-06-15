@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiabe di Notte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comfortaa', cursive;
+      background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      color: #ffffff;
+    }
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fcd5ce;
+    }
+    .slogan {
+      font-size: 1.2em;
+      color: #ffcad4;
+    }
+    .hero {
+      background: url('https://cdn.pixabay.com/photo/2015/10/30/20/13/night-1015991_1280.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h3 {
+      color: #f4a261;
+      font-size: 1.8em;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .video-item iframe {
+      width: 100%;
+      height: 160px;
+      border-radius: 10px;
+      border: none;
+    }
+    .name-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .name-form input[type="text"],
+    .name-form input[type="email"] {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+    }
+    .name-form button {
+      padding: 10px;
+      background-color: #f4a261;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .name-form button:hover {
+      background-color: #e76f51;
+    }
+    footer {
+      background-color: #1b263b;
+      text-align: center;
+      padding: 20px;
+      color: #b0c4de;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fiabe di Notte</h1>
+    <p class="slogan">Dove i sogni prendono vita ✨🌙</p>
+  </header>
+
+  <div class="hero">
+    <h2>Fiabe ASMR per far sognare i più piccoli in tutta calma e serenità 💤</h2>
+  </div>
+
+  <section>
+    <h3>Ultimi Video</h3>
+    <div class="video-list">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Chi siamo</h3>
+    <p>
+      "Fiabe di Notte" è un canale dedicato a fiabe raccontate con voci dolci e sottofondi rilassanti. Pensato per accompagnare i bambini nel sonno, questo spazio virtuale è l'abbraccio serale che ogni famiglia desidera. 🐻📖✨
+    </p>
+  </section>
+
+  <section>
+    <h3>Partecipa alla prossima fiaba!</h3>
+    <p>Scrivi qui sotto il tuo nome preferito per i protagonisti delle nostre prossime storie. I nomi più votati verranno usati nelle nuove fiabe! 🌟</p>
+    <form class="name-form" action="https://formspree.io/f/mzzggjzj" method="POST">
+      <input type="text" name="name" placeholder="Scrivi un nome..." required>
+      <input type="email" name="email" placeholder="(facoltativo) Il tuo indirizzo email">
+      <button type="submit">Invia il tuo nome ✨</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Fiabe di Notte | Tutti i diritti riservati 🌜
+  </footer>
+</body>
+</html>
